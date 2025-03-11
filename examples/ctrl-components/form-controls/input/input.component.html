@@ -1,0 +1,10 @@
+<div class="input-layout">
+  <label *ngIf="ctrl.label.get()" class="text">{{ ctrl.label.get() }}</label>
+  {{ ctrl.isValid.get() }}
+  <input
+    [ngModel]="ctrl.value.get()"
+    (change)="ctrl.setValue($event.target['value'])"
+    [type]="ctrl.type.get()"
+    [placeholder]="ctrl.placeholder.get()"
+  />
+</div>

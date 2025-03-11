@@ -1,0 +1,7 @@
+<button
+  class="btn btn-accent"
+  [disabled]="ctrl.disabled.get()"
+  (click)="ctrl.onClick.emit()"
+>
+  {{ ctrl.label.get() }}
+</button>

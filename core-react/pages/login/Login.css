@@ -1,0 +1,49 @@
+.lgn-main-layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 550px;
+  place-items: center;
+}
+
+.lgn-logo {
+  max-width: 500px;
+}
+
+.lgn-form-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #1e396c;
+  display: grid;
+  /* place-content: center; */
+  align-items: center;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  justify-items: center;
+}
+
+.lgn-form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 50px;
+
+  label {
+    font-size: 1.1em;
+    color: white;
+    font-weight: bold;
+  }
+
+  .lgn-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid black;
+    font-size: 1.2em;
+  }
+
+  .lgn-button {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: orange;
+    border: none;
+  }
+}
